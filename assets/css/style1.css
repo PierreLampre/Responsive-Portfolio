@@ -1,0 +1,337 @@
+
+/*Master Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    background-color: #edf0f0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    /* padding-bottom: 2px; */
+    border-bottom: 1px solid #777;
+    background-color: #fff;
+    margin-bottom: 45px;
+}
+
+.alignment {
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#header-name {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 20px;
+    float: left
+}
+
+nav {
+    margin-top: 1.6em;
+    margin-right: 2px;
+    float: right;
+}
+
+.nav-link{
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.nav-link:nth-of-type(3) {
+    margin-right: 0;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#container {
+   margin: auto;
+   width: 960px;
+   border: 1px solid #dee3df;
+   background-color: #fff;
+   padding: 30px;
+   box-sizing: border-box;
+}
+
+section {
+    margin-top: 15px;
+    line-height: 1.5em;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #4aaaa5;
+}
+
+.push {
+    height: 50px;
+}
+
+footer {
+    text-align: center;
+    border-top: 10px solid #4aaaa5;
+    background-color: #777;
+    color: #d7ded9;
+    margin-top: 45px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* About Me Styles */
+
+#imgofme {
+    width: 170px;
+    height: 150px;
+    float: left;
+    padding: 20px 20px 10px 0px;
+}
+
+.about-me-p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+/* Portfolio Styles */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* justify-items: center; */
+}
+
+.grid-item {
+    width: 300px;
+    height: 240px;
+    margin: 25px;
+    font-size: 30px;
+    background-image: url('../img/portfolio-about-me.png');
+    background-position: center;
+}
+
+.grid-item:nth-of-type(2) {
+    background-image: url('../img/portfolio-gallery.png');
+}
+
+.grid-item:nth-of-type(3) {
+    background-image: url('../img/portfolio-contact.png');
+}
+
+.grid-item:nth-of-type(4) {
+    background-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/socialmedia/apple/225/black-question-mark-ornament_2753.png');
+}
+
+.text-drop {
+    margin-top: 180px;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+}
+
+.text-drop a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-drop a:hover {
+    color:#d1e687;
+    transition: all .4s ease;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #b8c7e0;
+}
+
+/* Contact Form Styles */
+
+form {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+form input {
+    font-size: 20px;
+    width: 34.5em;
+    margin: 20px 0px 20px 0px;
+    padding: 15px;
+}
+
+form input:nth-of-type(3) {
+    height: 200px;
+}
+
+label {
+    display: block;
+}
+
+#submit {
+    display: block;
+    background-color: #4aaaa5;
+    color: white;
+    width: 12em;
+}
+
+#submit:hover {
+    background-color: white;
+    color: #4aaaa5;
+    transition: all .4s ease;
+    font-weight: bold;
+    border: 2px solid #4aaaa5;
+}
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+    /* Master & About Me */
+
+    .alignment {
+        width: 760px;
+    }
+
+    #container {
+        width: 760px;
+    }
+
+    /* Contact Form */
+
+    form input {
+        width: 29.5em;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Master & About Me */
+
+    .alignment {
+        width: 600px;
+    }
+
+    #container {
+        width: 600px;
+    }
+
+    #imgofme {
+        width: 300px;
+        height: 270px;
+    }
+
+    /* Portfolio */
+
+    .grid-container {
+        justify-items: center;
+    }
+
+    .grid-item {
+        width: 250px;
+        height: 190px;
+        margin: 25px;
+        font-size: 24px;
+    }
+
+    .text-drop {
+        margin-top: 140px;
+    }
+
+    /* Contact Form */
+
+    form input {
+        width: 25.5em;
+    }
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+    /* Master & About Me */
+
+    .alignment {
+        width: 100%;
+        padding: 0;
+    }
+
+    header {
+        padding-right: 41px;
+    }
+
+    #header-name, nav {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    h2 {
+        /* text-align: center; */
+        font-size: 32px;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    .nav-link {
+        margin: 3px 20px 3px 3px;
+    }
+
+    .nav-link:nth-of-type(3) {
+        margin-right: 0;
+    }
+
+    #container {
+        width: 450px;
+    }
+
+    #imgofme {
+        float: none;
+        width: 390px;
+        height: 312px;
+    }
+
+    /* Portfolio */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+
+    .grid-item {
+        width: 370px;
+        height: 240px;
+        margin: 25px;
+        font-size: 30px;
+    }
+
+    .text-drop {
+        margin-top: 180px;
+    }
+
+    /* Contact Form */
+
+    form input {
+        width: 17.6em;
+    }
+
+    #submit {
+        width: 10em;
+
+    }
+
+  } 
+ 
