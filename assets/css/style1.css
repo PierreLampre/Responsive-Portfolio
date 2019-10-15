@@ -336,3 +336,39 @@ label {
 
   } 
  
+  @media screen and (max-width: 500px) {
+
+    /* Master & About Me */
+
+    #container {
+        width: 400px;
+    }
+
+    #imgofme {
+        float: none;
+        width: 330px;
+        height: 312px;
+    }
+
+    /* Portfolio */
+
+    .grid-item {
+        width: 330px;
+        height: 240px;
+        margin: 25px;
+        font-size: 30px;
+    }
+
+    /* Contact Form */
+
+    form input {
+        width: 15.2em;
+    }
+
+    #submit {
+        width: 9em;
+
+    }
+
+  } 
+ 
