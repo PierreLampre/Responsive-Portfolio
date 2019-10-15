@@ -267,6 +267,7 @@ label {
 
     header {
         padding-right: 41px;
+        position: static;
     }
 
     #header-name, nav {
