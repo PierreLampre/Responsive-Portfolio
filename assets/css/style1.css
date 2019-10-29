@@ -136,7 +136,7 @@ footer {
 }
 
 .grid-item:nth-of-type(4) {
-    background-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/socialmedia/apple/225/black-question-mark-ornament_2753.png');
+    background-image: url('../img/gs.png');
 }
 
 .text-drop {
