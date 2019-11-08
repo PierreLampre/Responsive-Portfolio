@@ -154,12 +154,21 @@ footer {
     text-align: center;
 }
 
-.text-drop a {
+.more-text-drop {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+}
+
+.more-text-drop a {
     text-decoration: none;
     color: white;
 }
 
-.text-drop a:hover {
+.more-text-drop a:hover {
     color:#d1e687;
     transition: all .4s ease;
     -webkit-text-stroke-width: 1px;
