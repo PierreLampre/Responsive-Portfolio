@@ -215,6 +215,25 @@ label {
     width: 100px;
 }
 
+#contact-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-p {
+    margin: 15px;
+}
+
+#my-resume {
+    font-size: 20px;
+    padding-top: 2px;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    width: 250px;
+    height: 25px;
+    margin-top: 10px;
+}
 
 /* Media Queries */
 
@@ -274,6 +293,11 @@ label {
 
     form input {
         width: 25.5em;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: column;
     }
 
   }
