@@ -147,6 +147,14 @@ footer {
     background-image: url('../img/othits.png');
 }
 
+.grid-item:nth-of-type(7) {
+    background-image: url('../img/liri.png');
+}
+
+.grid-item:nth-of-type(8) {
+    background-image: url('../img/bamazon.png');
+}
+
 .text-drop {
     margin-top: 180px;
     background-color: #4aaaa5;
