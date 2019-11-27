@@ -159,6 +159,10 @@ footer {
     background-image: url('../img/1.png');
 }
 
+.grid-item:nth-of-type(10) {
+    background-image: url('../img/burger_ss1.png');
+}
+
 .text-drop {
     margin-top: 180px;
     background-color: #4aaaa5;
